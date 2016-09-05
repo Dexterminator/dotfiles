@@ -1,10 +1,12 @@
 - clean: ['~']
 
 - link:
+    ~/.dotfiles: ''
     ~/.gitconfig: gitconfig
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
+    ~/.zshenv: zshenv
     ~/bin:
         path: bin/
         create: true
