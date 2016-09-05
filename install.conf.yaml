@@ -5,6 +5,7 @@
     ~/.gitconfig: gitconfig
     ~/.vim: vim
     ~/.vimrc: vimrc
+    ~/.zsh: zsh
     ~/.zshrc: zshrc
     ~/.zshenv: zshenv
     ~/bin:

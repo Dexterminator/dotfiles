@@ -5,7 +5,7 @@ export LANG=en_US.UTF-8
 
 ZSH_THEME="robbyrussell"
 
-plugins=(git vi-mode)
+plugins=(git vi-mode zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
