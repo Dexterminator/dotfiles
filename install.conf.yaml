@@ -2,6 +2,7 @@
 
 - link:
     ~/.gitconfig: gitconfig
+    ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
     ~/bin:
