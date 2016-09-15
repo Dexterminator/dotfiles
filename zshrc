@@ -23,3 +23,7 @@ bindkey '^w' backward-kill-word
 bindkey '^r' history-incremental-search-backward
 
 bindkey -M viins 'kj' vi-cmd-mode
+
+if [ -f ~/.zshrc_local ]; then
+	source ~/.zshrc_local
+fi
