@@ -24,6 +24,9 @@ bindkey '^r' history-incremental-search-backward
 
 bindkey -M viins 'kj' vi-cmd-mode
 
+alias dc="docker-compose"
+alias gd="git diff"
+
 if [ -f ~/.zshrc_local ]; then
 	source ~/.zshrc_local
 fi
