@@ -3,7 +3,7 @@ export ZSH_CUSTOM=$HOME/.zsh
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 plugins=(git vi-mode zsh-syntax-highlighting)
 
