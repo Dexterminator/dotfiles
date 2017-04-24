@@ -1,0 +1,13 @@
+#!/bin/sh
+
+function gitb {
+   if [ -n "$1" ]
+   then
+      branch=$(git reflog | egrep -io "moving from ([^[:space:]]+)" | awk '{ print $3 }' | awk ' !x[$0]++' | sed -n $1p)
+      git co $branch
+   else
+      git reflog | egrep -io "moving from ([^[:space:]]+)" | awk '{ print $3 }' | awk ' !x[$0]++' | awk '{ print "\033[1;31m" NR "\033[0m" " " $1 }' | head -n5
+   fi
+}
+
+gitb $1
