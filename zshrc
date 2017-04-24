@@ -24,8 +24,18 @@ bindkey '^r' history-incremental-search-backward
 
 bindkey -M viins 'kj' vi-cmd-mode
 
-alias dc="docker-compose"
 alias gd="git diff"
+alias ..='cd ..'
+alias dc="docker-compose"
+alias dm='docker-machine'
+
+function lsg {
+        ls | grep -i $1 | sort
+}
+
+function findn {
+        find . -iname $1
+}
 
 if [ -f ~/.zshrc_local ]; then
 	source ~/.zshrc_local
@@ -36,3 +46,5 @@ prompt_context() {
     prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
   fi
 }
+
+export EDITOR=vim
