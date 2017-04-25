@@ -31,6 +31,9 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=243'
 # fzf
 source "$FZF_PATH/shell/key-bindings.zsh"
 
+# Autopair
+source "$ZSH_CUSTOM/plugins/zsh-autopair/autopair.zsh"
+
 alias gd="git diff"
 alias ..='cd ..'
 alias dc="docker-compose"
