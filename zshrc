@@ -14,7 +14,7 @@ bindkey -v
 export KEYTIMEOUT=20
 
 # Use vim cli mode
-bindkey '^P' up-history
+bindkey '^P' up-line-or-search
 bindkey '^N' down-history
 
 bindkey '^?' backward-delete-char
