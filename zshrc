@@ -5,7 +5,7 @@ export LANG=en_US.UTF-8
 
 ZSH_THEME="agnoster"
 
-plugins=(git vi-mode zsh-syntax-highlighting)
+plugins=(git vi-mode zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -23,6 +23,10 @@ bindkey '^w' backward-kill-word
 bindkey '^r' history-incremental-search-backward
 
 bindkey -M viins 'kj' vi-cmd-mode
+
+# Insert autosuggestion
+bindkey '^O' autosuggest-accept
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=243'
 
 alias gd="git diff"
 alias ..='cd ..'
