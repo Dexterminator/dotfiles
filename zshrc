@@ -21,6 +21,10 @@ bindkey '^?' backward-delete-char
 bindkey '^h' backward-delete-char
 bindkey '^w' backward-kill-word
 bindkey '^r' history-incremental-search-backward
+bindkey "^[f" forward-word
+bindkey "^[b" backward-word
+bindkey "^F" forward-char
+bindkey "^B" backward-char
 
 bindkey -M viins 'kj' vi-cmd-mode
 
