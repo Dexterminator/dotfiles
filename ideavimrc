@@ -42,3 +42,8 @@ map <leader>C :action :cursive.actions.paredit/cycle-collection-type<CR>
 " Evaluate sexp like in vim-fireplace
 map cpp :action :cursive.repl.actions/run-top-sexp<CR>
 
+nnoremap <Tab> >>_
+nnoremap <S-Tab> <<_
+inoremap <S-Tab> <C-D>
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
