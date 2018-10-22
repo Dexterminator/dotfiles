@@ -19,6 +19,7 @@ set complete+=k
 
 map <Space> <leader>
 map ö $
+map ; $
 map 0 ^
 map D <C-D>
 map U <C-U>
