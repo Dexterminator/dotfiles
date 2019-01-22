@@ -21,8 +21,8 @@ map <Space> <leader>
 map ö $
 map ; $
 map 0 ^
-map D <C-D>
-map U <C-U>
+map D {
+map U }
 inoremap kj <Esc>
 xnoremap p "_dP
 nmap <F12> :LLPStartPreview<cr>
