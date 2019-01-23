@@ -47,3 +47,71 @@ nnoremap <S-Tab> <<_
 inoremap <S-Tab> <C-D>
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
+
+" ---IntelliJ stuff--- "
+" Toggle comments with gcc (or gc in selection)
+nnoremap gcc :action CommentByLineComment<cr>
+vnoremap gc :action CommentByLineComment<cr>
+
+" File operations
+nnoremap <leader>f. :action FindInPath<cr>
+nnoremap <leader>fr :action RenameFile<cr>
+
+" 'Buffers'
+nnoremap <leader>bx :action CloseActiveTab<cr>
+nnoremap <leader>bs :action SaveAll<cr>
+
+" Code
+nnoremap <leader>cD :action ShowUsages<cr>
+nnoremap <leader>cf :action ReformatCode<cr>
+" > Refactorings
+nnoremap <leader>cri :action OptimizeImports<cr>
+nnoremap <leader>cre :action RenameElement<cr>
+nnoremap <leader>crr :action Refactorings.QuickListPopupAction<cr>
+
+" Debugging
+nnoremap <leader>dd :action Debug<cr>
+nnoremap <leader>dc :action ChooseDebugConfiguration<cr>
+" > Breakpoints
+nnoremap <leader>db :action ToggleLineBreakpoint<cr>
+nnoremap <leader>dr :action ViewBreakpoints<cr>
+
+" Running
+nnoremap <leader>rr :action Run<cr>
+nnoremap <leader>rc :action ChooseRunConfiguration<cr>
+
+" Window
+nnoremap <leader>wh :action VimWindowSplitHorizontal<cr>
+nnoremap <leader>wv :action VimWindowSplitVertical<cr>
+nnoremap <leader>wh :action VimWindowLeft<cr>
+nnoremap <leader>wj :action VimWindowDown<cr>
+nnoremap <leader>wk :action VimWindowUp<cr>
+nnoremap <leader>wl :action VimWindowRight<cr>
+nnoremap <leader>wth :action PreviousTab<cr>
+nnoremap <leader>wtl :action NextTab<cr>
+
+" Project
+nnoremap <leader>pt :action SelectIn<cr>
+
+" Git
+nnoremap <leader>ga :action Annotate<cr>
+
+" Go to
+nnoremap ga :action GotoAction<cr>
+nnoremap gi :action GotoImplementation<cr>
+nnoremap gs :action GotoSuperMethod<cr>
+nnoremap gd :action GotoDeclaration<cr>
+nnoremap gt :action GotoTest<cr>
+nnoremap gu :action FindUsages<cr>
+nnoremap gr :action GotoRelated<cr>
+
+" Standard VIM-bindings
+nmap <c-i> :action Forward<CR>
+nmap <c-o> :action Back<CR>
+
+" Toggles
+nnoremap <leader>tb :action Annotate<cr>
+
+" Errors
+nnoremap <leader>en :action GotoNextError<cr>
+nnoremap <leader>ep :action GotoPreviousError<cr>
