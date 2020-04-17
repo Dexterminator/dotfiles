@@ -24,7 +24,6 @@ map 0 ^
 map D }
 map U {
 inoremap kj <Esc>
-vnoremap kj <Esc>
 xnoremap p "_dP
 nmap <F12> :LLPStartPreview<cr>
 nmap <F13> :NERDTree<cr>
