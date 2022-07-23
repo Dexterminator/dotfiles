@@ -33,7 +33,7 @@ bindkey '^O' autosuggest-accept
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=243'
 
 # fzf
-source "$FZF_PATH/shell/key-bindings.zsh"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Autopair
 source "$ZSH_CUSTOM/plugins/zsh-autopair/autopair.zsh"
@@ -70,3 +70,4 @@ prompt_context() {
 }
 
 export EDITOR=vim
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
