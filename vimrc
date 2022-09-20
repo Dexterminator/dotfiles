@@ -23,6 +23,7 @@ map ; $
 map 0 ^
 map D }
 map U {
+map , %
 inoremap kj <Esc>
 xnoremap p "_dP
 nmap <F12> :LLPStartPreview<cr>
